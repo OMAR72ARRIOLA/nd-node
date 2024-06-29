@@ -1,5 +1,5 @@
-import express from 'express'
-import usuarioRoutes from './routes/usuarioRoutes.js'
+import express from 'express';
+import usuarioRoutes from './routes/usuarioRoutes.js';
 
 //crear la app 
 const app = express()
@@ -8,12 +8,12 @@ const app = express()
 app.set ('view engine' , 'pug')
 app.set('views', './views')
 
+// carpeta publica 
+app.use (express.static('public'))
 
 
 //router
 app.use('/auth', usuarioRoutes)
-
-
 
 
 //definir un puerto
