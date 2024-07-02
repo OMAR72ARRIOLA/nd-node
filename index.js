@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express'
 import usuarioRoutes from './routes/usuarioRoutes.js';
 
 //crear la app 
@@ -9,7 +9,7 @@ app.set ('view engine' , 'pug')
 app.set('views', './views')
 
 // carpeta publica 
-app.use (express.static('public'))
+app.use( express.static('public') )
 
 
 //router
