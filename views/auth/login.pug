@@ -8,3 +8,18 @@ block contenido
 
         .mt-8.mx-auto.max-w-md
             .bg-white.py-8.px-4.shadow
+                form.space-y-5
+         
+                    div 
+                        label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for = "email") Email de Registro
+                        input#email.w-full.px-3.py-3.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu Email" type="email" name="Email" )
+                    div 
+                        label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for = "Contraseña") Tu Contraseña
+                        input#password.w-full.px-3.py-3.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu Contraseña" type="password" name="contraseña" )    
+                    
+                    div.flex.items-center.justify-between
+                        a.text-gray-500.text-xs(href="/auth/registro") ¿No tienes una cuenta? Crear cuenta
+                        a.text-gray-500.text-xs(href="/auth/olvide-password") Olvide mi contraseña
+
+                    input(class = "w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 cursor-pointer" 
+                    type="submit" value="Iniciar Sesión") 
